@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class StringHelper {
    
-    
+
     /*
     * Transforms a strings representation of an equation into an Equation class
     */

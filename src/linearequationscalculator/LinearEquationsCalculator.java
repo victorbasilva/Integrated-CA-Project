@@ -59,23 +59,34 @@ public class LinearEquationsCalculator {
             
             // to exit application if is true
             boolean isExit = false;
+            // set initially to true so we can set user like it was logout before
+            boolean isLoggout = true;
+            boolean isExitOptions = false;
             // do until isExit is set to true be in login menu
             do{
                 // get login menu with 3 options login register exit
                 int loginOption = loginMenu.getMenu(); 
                 
                 switch (loginOption) {
+                    case 5:
                     case 1:
-                        boolean isLoginSuccessful = loginMenu.login();
-                        if(!isLoginSuccessful){
-                            //if login is not successfull return to login menu
-                            break;
+                        if(isLoggout){
+                            boolean isLoginSuccessful = loginMenu.login();
+                            if(!isLoginSuccessful){
+                                //if login is not successfull return to login menu
+                                break;
+                            }
                         }
                         User user = loginMenu.getUser();
+                        loginMenu.showWelcomeMessage(user.getName());
                         boolean isAdmin = user.isAdministrator();
+                        
                         // set options menu for admin or regular user
                         optionsMenu.setMenu(isAdmin);
-                        boolean isExitOptions = false;
+                        // reset to false
+                        isExitOptions = false;
+                        //set to fals so coming back to menu don't trigger login again
+                        isLoggout = false;
                         
                         // until isExitOptions is set to true stay inside options menu
                         do{
@@ -130,6 +141,7 @@ public class LinearEquationsCalculator {
                         isExit = true;
                         break;
                     case 4:
+                        isLoggout = true;
                         loginMenu.logout();
                         break;
                     default:

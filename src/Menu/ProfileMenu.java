@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To handle user profile.
  */
 package Menu;
 
@@ -9,17 +7,21 @@ import Users.User;
 import databaseConnector.DataBaseWriter;
 
 public class ProfileMenu extends Menu {
+    // CONSTRUCTOR
     public ProfileMenu(){
-        this.createProfileMenu();
+        this.createProfileMenu(); // set the menu
     }
     
+    /**
+     * Create a profile menu options with menu items.
+     */
     private void createProfileMenu(){
         // all possible menu items 
         MenuItem backItem = new MenuItem(1, "Back", true);
         MenuItem changeNameItem = new MenuItem(2, "Edit Name", true);
         MenuItem changeSurnameItem = new MenuItem(3, "Edit Surname", true);
         MenuItem changePasswordItem = new MenuItem(4, "Change Password", true);
-                
+        // add them to array list of menu items        
         this.menuItems.add(backItem); // index: 0
         this.menuItems.add(changeNameItem); // index: 1
         this.menuItems.add(changeSurnameItem); // 2
