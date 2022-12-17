@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
-*Use examples:
-*       // -y-2x=7
-*       // -3x+5x -2y+10y -6 = 0
+/*Use examples:
 
-x+y+z=2
-2x+3y+5z=11
-x-5y+6z=29
+1) 2𝑥 − 3𝑦 − 2 = 0
+   3𝑥 + 8𝑦 − 3 = 0
+
+
+2) x + 𝑦 + 𝑧 = 2
+   2𝑥 + 3𝑦 + 5𝑧 = 11
+   𝑥 − 5𝑦 + 6𝑧 = 29
+
  */
+
 package linearequationscalculator;
 
 import Menu.EquationMenu;
