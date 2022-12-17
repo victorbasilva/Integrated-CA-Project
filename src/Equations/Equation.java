@@ -108,7 +108,7 @@ public class Equation {
     
     // METHODS
     /**
-     * Sort equation in a way that can be used inside a matric.
+     * Sort equation in a way that can be used inside a matrix.
      * Will Filter left and right members of equation and 
      * then add all values together that can be added together.
      * For example equation: 3y-2x+7-5z =8 
@@ -183,8 +183,8 @@ public class Equation {
     }
     
     /**
-     * Add all x,y,z and constant values together to get final values for matric.
-     * Sort them so they can be used inside matric
+     * Add all x,y,z and constant values together to get final values for matrix.
+     * Sort them so they can be used inside matrix
      */
     public void addAllSameVariablesTogether(){
         try{
@@ -217,7 +217,7 @@ public class Equation {
     
     /**
      * Add all values that are grouped together to get 
-     * final value to be used in matric 
+     * final value to be used in matrix 
      * (for example all x's in equation, or all constants etc.)
      * @param members - each equation member that is grouped together
      * @return - a double value of added elements

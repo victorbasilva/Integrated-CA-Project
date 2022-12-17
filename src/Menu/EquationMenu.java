@@ -4,8 +4,8 @@
 package Menu;
 
 import Equations.Equation;
-import Equations.Matric2x2;
-import Equations.Matric3x3;
+import Equations.Matrix2x2;
+import Equations.Matrix3x3;
 import Users.User;
 import Utility.StringHelper;
 import databaseConnector.DataBaseWriter;
@@ -17,9 +17,9 @@ public class EquationMenu extends Menu{
     // create array list to store linear equations
     ArrayList<Equation> linearEquations = new ArrayList<>();
     // for 2x2 matric
-    Matric2x2 matric2x2;
+    Matrix2x2 matrix2x2;
     // for 3x3 matric
-    Matric3x3 matric3x3;
+    Matrix3x3 matrix3x3;
     // number of equations as int
     int numberOfEquations;
     // determinant
@@ -85,29 +85,29 @@ public class EquationMenu extends Menu{
         // if there are 2 equations
         if(this.numberOfEquations == 2){
             //if is 2x2 solve 2x2 matric
-            this.matric2x2 = new Matric2x2();
+            this.matrix2x2 = new Matrix2x2();
              // set size of matric based on user selection
-            this.matric2x2.setMatricColumns(this.numberOfEquations);
-            this.matric2x2.setMatricRows(this.numberOfEquations);
-            this.matric2x2.setMatricOrder(this.numberOfEquations, this.numberOfEquations);
+            this.matrix2x2.setMatrixColumns(this.numberOfEquations);
+            this.matrix2x2.setMatrixRows(this.numberOfEquations);
+            this.matrix2x2.setMatrixOrder(this.numberOfEquations, this.numberOfEquations);
             //set matric members
-            this.matric2x2.setMatricMembers(this.matric2x2.getMatricRows(), this.matric2x2.getMatricColumns(), this.linearEquations);
+            this.matrix2x2.setMatrixMembers(this.matrix2x2.getMatrixRows(), this.matrix2x2.getMatrixColumns(), this.linearEquations);
             // return true if solved
-            return this.matric2x2.solve2x2Matric();
+            return this.matrix2x2.solve2x2Matric();
         }
         
         // else solve 3x3 matric
-        this.matric3x3 = new Matric3x3();
+        this.matrix3x3 = new Matrix3x3();
         // set size of matric based on user selection
-        this.matric3x3.setMatricColumns(this.numberOfEquations);
-        this.matric3x3.setMatricRows(this.numberOfEquations);
-        this.matric3x3.setMatricOrder(this.numberOfEquations, this.numberOfEquations);
+        this.matrix3x3.setMatrixColumns(this.numberOfEquations);
+        this.matrix3x3.setMatrixRows(this.numberOfEquations);
+        this.matrix3x3.setMatrixOrder(this.numberOfEquations, this.numberOfEquations);
         //set matric members
-        this.matric3x3.setMatricMembers(this.matric3x3.getMatricRows(), this.matric3x3.getMatricColumns(), this.linearEquations);
+        this.matrix3x3.setMatrixMembers(this.matrix3x3.getMatrixRows(), this.matrix3x3.getMatrixColumns(), this.linearEquations);
         // set matric of signs for 3x3 matric
-        this.matric3x3.setMatricOfSigns();
+        this.matrix3x3.setMatricOfSigns();
         // return true if solved
-        return this.matric3x3.solve3x3Matric();
+        return this.matrix3x3.solve3x3Matric();
     }
     
     /**
@@ -128,7 +128,7 @@ public class EquationMenu extends Menu{
             }
         }
         // add solution to solution string
-        String solution = (this.numberOfEquations == 2) ? this.matric2x2.getSolution() : this.matric3x3.getSolution();
+        String solution = (this.numberOfEquations == 2) ? this.matrix2x2.getSolution() : this.matrix3x3.getSolution();
         // get a new object of database writer
         DataBaseWriter dbWriter = new DataBaseWriter();
         // save attempt
