@@ -25,7 +25,7 @@ import databaseConnector.DatabaseCon;
 
 /**
  *
- * @author gabriel eugenio silva
+ * @authors Gabriel Eugenio 2021240 and Victor Silva 2021259
  */
 public class LinearEquationsCalculator {
 
