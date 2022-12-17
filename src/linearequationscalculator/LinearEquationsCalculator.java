@@ -78,6 +78,7 @@ public class LinearEquationsCalculator {
                             }
                         }
                         User user = loginMenu.getUser();
+                        loginMenu.showWelcomeMessage(user.getName());
                         boolean isAdmin = user.isAdministrator();
                         
                         // set options menu for admin or regular user

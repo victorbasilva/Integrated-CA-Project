@@ -15,13 +15,20 @@ public class MenuItem {
         this.isDisplayed = isDisplayed;
     }
     
+    /**
+     * Displays every menu item as number and text if is active
+     */
     public void displayMenuItem(){
         if(this.isDisplayed){
-            System.out.println(this.number + ". " +this.text);
+            System.out.println(this.getItem());
         }
     }
     
-    public String getItem(){
+   /**
+    * Returns number and text of menu item
+    * @return number and text of menu item
+    */
+    private String getItem(){
         return this.number + ". " +this.text;
     }
     

@@ -26,10 +26,18 @@ public class Menu {
         }
     }
     
+    /**
+     * Helper method to display message on menu
+     * @param message - message to display
+     */
     public void showMessage(String message){
         System.out.println(message);
     }
    
+    /**
+     * Shows welcome message
+     * @param user - currently logged user
+     */
     public void showWelcomeMessage(String user){
         System.out.println("Welcome to Linear Equations Calculator " +user);
     }

@@ -73,10 +73,11 @@ public class LoginMenu extends Menu{
     }
     
     /**
-     * 
-     * @return 
+     * Get user options and set a min and max value for available options
+     * based if the user is logged on or not.
+     * @return selected option by user as int
      */
-    public int getOption(){
+    private int getOption(){
         int minValue = 3;
         int maxValue = 5;
         // different options are available when user is not logged in
@@ -89,8 +90,8 @@ public class LoginMenu extends Menu{
     
     /** LOGIN **/
     /**
-     * 
-     * @return 
+     * Method that will ask for username and password and then try to login user
+     * @return true if successful login
      */
     public boolean login(){
         this.userName = myKb.getUserText(this.userNameText);
@@ -99,8 +100,9 @@ public class LoginMenu extends Menu{
     }
     
     /**
-     * 
-     * @return 
+     * Method that connects to database and try to login user by checking 
+     * user credentials in database
+     * @return true if success
      */
     private boolean loginUser(){
         DataBaseReader dbReader = new DataBaseReader();
@@ -117,18 +119,23 @@ public class LoginMenu extends Menu{
     
     /** LOGOUT **/
     /**
-     * 
-     * @return 
+     * Will logout user. 
+     * Reset currently logged user and change menu options after login 
+     * @return true when finish
      */
     public boolean logout(){
         this.loggedUser = null;
         System.out.println("You have successfuly logout");
-        System.out.println();
+        System.out.println(); //print empty line
         // if logout is successful replace logout with login and add register options
         this.setNotloggedInMenu();
         return true;
     }
     
+    /**
+     * Getter to get currently logged user
+     * @return - loggedUser as User
+     */
     public User getUser(){
         return this.loggedUser;
     }
