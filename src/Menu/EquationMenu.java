@@ -1,5 +1,5 @@
 /*
- *Menu for all equation and equation options
+ * Menu for all equation and equation options
  */
 package Menu;
 

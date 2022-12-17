@@ -1,3 +1,10 @@
+/**
+ * Class that represents each menu item
+ * It will have:
+ * Number for selecting menu option
+ * Text to describe option
+ * IsDisplayed boolean to hide some menu options
+ */
 package Menu;
 
 public class MenuItem {

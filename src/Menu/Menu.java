@@ -1,5 +1,7 @@
 /*
- * Class to handle menu and meu questions
+ * Class to handle menu and menu questions.
+ * Other menus will inherit
+ * Will make available menuItems and give access to Input Utilities to all menus
  */
 package Menu;
 
