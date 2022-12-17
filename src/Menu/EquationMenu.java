@@ -81,7 +81,7 @@ public class EquationMenu extends Menu{
      * If there are 2 equations solve 3x3 matrix system
      * @return true if successful
      */
-    public boolean SolveMatric(){
+    public boolean SolveMatrix(){
         // if there are 2 equations
         if(this.numberOfEquations == 2){
             //if is 2x2 solve 2x2 matric
@@ -93,7 +93,7 @@ public class EquationMenu extends Menu{
             //set matric members
             this.matrix2x2.setMatrixMembers(this.matrix2x2.getMatrixRows(), this.matrix2x2.getMatrixColumns(), this.linearEquations);
             // return true if solved
-            return this.matrix2x2.solve2x2Matric();
+            return this.matrix2x2.solve2x2Matrix();
         }
         
         // else solve 3x3 matric

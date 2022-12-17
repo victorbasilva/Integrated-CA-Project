@@ -119,7 +119,7 @@ public class LinearEquationsCalculator {
                                         // first ask user to type in equations
                                         equationMenu.addEquations();
                                         // then add them to matric and solve it
-                                        boolean isSolved = equationMenu.SolveMatric();
+                                        boolean isSolved = equationMenu.SolveMatrix();
                                         if(!isSolved){
                                             break;
                                         }

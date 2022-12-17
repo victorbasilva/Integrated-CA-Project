@@ -74,12 +74,12 @@ public class InputUtilities {
             // if there is no equals or there is more then one equal or there was wrong input
             if((equals > 1 || equals == 0) || isWrongInput){
                 isValid = false;
-                System.out.println("Enter only digits 0-9, letters: x,y,z and +,- or =");
+                System.out.println("Enter only digits 0-9, letters: x,y,z and +,- or = without space between them.");
             }else{
                 isValid = true; // end for loop
             }
         }while (!isValid);
-        //rturn user input
+        //return user input
         return userInput;
     }
     
@@ -108,7 +108,7 @@ public class InputUtilities {
                         userInput = 0;
                     }
                 } else {
-                    System.out.println("Try again. Please use number.");
+                    System.out.println("Try again. Please choose number.");
                     userInput = 0;
                 }
             } while (userInput == 0);
