@@ -86,8 +86,8 @@ public class InputUtilities {
     /**
      * Get user option from menu as integer
      * Keep asking until user type it correctly
-     * @param message
-     * @param maxAllowed 
+     * @param message - message to display to user
+     * @param maxAllowed -limit max value
      * @return - the users input as a String
     */
     public int getUserOption(String message, int maxAllowed){
@@ -122,9 +122,9 @@ public class InputUtilities {
     /**
      * Get user option from menu as integer
      * Keep asking until user type it correctly
-     * @param message
-     * @param minAlowed 
-     * @param maxAllowed 
+     * @param message - message to display to user
+     * @param minAlowed - limit min value
+     * @param maxAllowed - limit max value
      * @return - the users input as a String
     */
     public int getUserOptionInRange(String message, int minAlowed, int maxAllowed){
@@ -157,9 +157,10 @@ public class InputUtilities {
     }
     
     /**
-     * 
-     * @param message
-     * @return 
+     * Get integer value from user
+     * Keep asking until user type it correctly
+     * @param message - message to display to user
+     * @return user input value as integer
      */
     public int getUserInteger(String message){
         int userInput = 0; //set userInput to 0 initially
@@ -177,9 +178,10 @@ public class InputUtilities {
     }
     
     /**
-     * 
-     * @param message
-     * @return 
+     * Get String value from user
+     * Keep asking until user type it correctly
+     * @param message - message to display to user
+     * @return user input value as String
      */
     public String getUserText(String message){
         String userInput = ""; //set userInput to 0 initially

@@ -59,7 +59,7 @@ public class Matrix2x2 extends Matrix{
                 this.matrixInverse[i][j] = (1/this.getDeterminant()) * rearangedMatrix[i][j];
             }
         }
-        this.readMatrix(this.matrixInverse);
+        //this.readMatrix(this.matrixInverse);
    }
     
    /**

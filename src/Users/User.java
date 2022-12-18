@@ -99,6 +99,11 @@ public class User {
         return this.password;
     }
     
+    /**
+     * Get value of account type index for database
+     * from isAdministrator boolean
+     * @return 0 if admin 1 if regular user
+     */
     public int getAccountTypeByBoolean(){
         if(this.isAdministrator){
             return 0;
@@ -106,6 +111,11 @@ public class User {
         return 1;
     }
     
+    /**
+     * Get value of account status index for database
+     * from isActive boolean
+     * @return 0 if inactive 1 if active user
+     */
     public int getAccountStatusByBoolean(){
         if(!this.isActive){
             return 0;

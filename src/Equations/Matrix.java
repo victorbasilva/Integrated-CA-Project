@@ -89,7 +89,7 @@ public class Matrix {
         this.equations = equations;
         // create a matrix based on order
         this.matrix = new double[rows][columns];
-        
+        // go trough each row and column to set a each member
         for(int i=0; i < rows; i++){
             for(int j=0;j< columns;j++){
                 try{
@@ -104,6 +104,13 @@ public class Matrix {
         }
     }
     
+    /**
+     * Get equation based on row index and then find a member based on column index 
+     * @param rowIndex - index of row in equation
+     * @param columnIndex - index of column in equation
+     * @param equations - array list of equations
+     * @return - return value for a equation member
+     */
     private double getEquationMember(int rowIndex, int columnIndex, ArrayList<Equation> equations){
         Equation rowEquation = equations.get(rowIndex);
         EquationMember returnValue;
@@ -129,26 +136,50 @@ public class Matrix {
         }
     } 
     
+    /**
+     * Set the value of solution
+     * @param solution - string that we set solution to
+     */
     public void setSolution(String solution){
         this.solution = solution;
     }
    
+    /**
+     * Get solution
+     * @return solution as String
+     */
     public String getSolution(){
         return this.solution;
     }
     
+    /**
+     * Set value for determinant
+     * @param determinant as double
+     */
     public void setDeterminant(double determinant){
         this.determinant = determinant;
     }
     
+    /**
+     * Get determinant 
+     * @return determinant as double
+     */
     public double getDeterminant(){
         return this.determinant;
     }
    
+    /**
+     * get array list of equations
+     * @return equations as ArrayList<Equation>
+     */
     public ArrayList<Equation> getEquations(){
         return this.equations;
     }
     
+    /**
+     * get matrix variable
+     * @return matrix as double[][]
+     */
     public double[][] getMatrix(){
         return this.matrix;
     }

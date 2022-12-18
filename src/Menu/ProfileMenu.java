@@ -29,8 +29,9 @@ public class ProfileMenu extends Menu {
     }
     
     /**
-     * 
-     * @param user 
+     * Display user menu.
+     * Keep displaying until user select back (1) 
+     * @param user - logged in user
      */
     public void useMenu(User user){
         boolean isBack = false;
@@ -65,6 +66,12 @@ public class ProfileMenu extends Menu {
         }while(!isBack);
     }
     
+    /**
+     * Call a database Writer class that will update 
+     * changes made to user
+     * @param user -- currently logged in user
+     * @return - true if success
+     */
     private boolean updateUser(User user){
         DataBaseWriter dbWriter = new DataBaseWriter();
         boolean isRegistred = dbWriter.updateUser(user);
@@ -78,13 +85,17 @@ public class ProfileMenu extends Menu {
     
     /**
     * Display all profile menu options and return the option
-    * @return 
+    * @return - option (value) user selected as integer
     */
     public int getMenu(){
         this.displayMenuItems(this.menuItems, "PROFILE MENU");
         return this.myKb.getUserOptionInRange("", 1, 4);
     }
     
+    /**
+     * Will print user data on screen
+     * @param user - currently logged in user
+     */
     private void displayUserData(User user){
         System.out.println("Name: " +user.getName() + "|  Surname: " +user.getSurname());
     }

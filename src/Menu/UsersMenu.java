@@ -178,6 +178,12 @@ public class UsersMenu extends Menu{
         
     }
     
+    /**
+     * Returns user by user name
+     * @param userName -- user name we are searching for
+     * @param _users -- an array of all users
+     * @return user as User, null if we couldn't find user
+     */
     private User getUserByUserName(String userName, ArrayList<User> _users){
         // if there are users
         if(_users.size()>0){
