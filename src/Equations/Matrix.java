@@ -117,14 +117,14 @@ public class Matrix {
     }
     
     /**
-     * 
-     * @param matrix 
-     * Read members of matrix for debugging
+     * Method that will print out all matrix members
+     * Used in debugging to check if values are proper
+     * @param matrix - matrix we want to print as a double[][]
      */
     public void readMatrix(double[][] matrix){
         for(int i=0; i < matrix.length; i++){
             for(int j=0;j< matrix[i].length;j++){
-                System.out.println(i+j + " :" +matrix[i][j]);
+                System.out.println("[" +i + "]" + "[" +j + "]" + " :" +matrix[i][j]);
             }
         }
     } 

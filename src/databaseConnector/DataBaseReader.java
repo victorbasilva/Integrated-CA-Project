@@ -44,6 +44,12 @@ public class DataBaseReader {
         return true;
     }
     
+    /**
+     * 
+     * @param _userName
+     * @param _password
+     * @return 
+     */
     public User loginToSystem(String _userName, String _password){
         try{
             String useDatabaseByName = "USE " + this.dbName;

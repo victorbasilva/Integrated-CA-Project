@@ -35,6 +35,8 @@ public class ProfileMenu extends Menu {
     public void useMenu(User user){
         boolean isBack = false;
         do{
+            // display user data so we can check changes
+            this.displayUserData(user);
             // get options menu with all available options 
             int selectedOption = this.getMenu(); 
             switch(selectedOption){
@@ -81,5 +83,9 @@ public class ProfileMenu extends Menu {
     public int getMenu(){
         this.displayMenuItems(this.menuItems, "PROFILE MENU");
         return this.myKb.getUserOptionInRange("", 1, 4);
+    }
+    
+    private void displayUserData(User user){
+        System.out.println("Name: " +user.getName() + "|  Surname: " +user.getSurname());
     }
 }

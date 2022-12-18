@@ -104,8 +104,6 @@ public class EquationMenu extends Menu{
         this.matrix3x3.setMatrixOrder(this.numberOfEquations, this.numberOfEquations);
         //set matric members
         this.matrix3x3.setMatrixMembers(this.matrix3x3.getMatrixRows(), this.matrix3x3.getMatrixColumns(), this.linearEquations);
-        // set matric of signs for 3x3 matric
-        this.matrix3x3.setMatricOfSigns();
         // return true if solved
         return this.matrix3x3.solve3x3Matric();
     }
