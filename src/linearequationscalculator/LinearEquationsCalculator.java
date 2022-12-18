@@ -20,7 +20,7 @@ import Menu.RegistrationMenu;
 import Menu.UserOperationsMenu;
 import Menu.UsersMenu;
 import Users.User;
-import databaseConnector.DatabaseCon;
+import databaseConnector.DatabaseSetup;
 
 
 /**
@@ -35,7 +35,7 @@ public class LinearEquationsCalculator {
     public static void main(String[] args) {
         try {
             // Connect to database and create tables and add values
-            DatabaseCon myDatabase = new DatabaseCon();
+            DatabaseSetup myDatabase = new DatabaseSetup();
             boolean isDatabaseSetUp = myDatabase.setupDatabase();
             if(!isDatabaseSetUp){
                 // if we can't connect to database break application

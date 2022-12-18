@@ -2,6 +2,33 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< Updated upstream
         <group/>
+=======
+        <group>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/databaseConnector/DataBaseConnection.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Equations/Matric2x2.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/ProfileMenu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/EquationMenu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/RegistrationMenu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/OptionsMenu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/databaseConnector/DatabaseCon.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Utility/InputUtilities.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Equations/Matric.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/UserOperationsMenu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/Menu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/LoginMenu.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/databaseConnector/DataBaseWriter.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/linearequationscalculator/LinearEquationsCalculator.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Users/User.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Menu/MenuItem.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Equations/Matric3x3.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Users/UserOperation.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Utility/StringHelper.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Equations/EquationMember.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/databaseConnector/DataBaseReader.java</file>
+            <file>file:/C:/projects/Victor/Integrated-CA-Project/src/Equations/Equation.java</file>
+        </group>
+>>>>>>> Stashed changes
     </open-files>
 </project-private>

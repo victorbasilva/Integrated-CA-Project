@@ -11,13 +11,13 @@ import java.sql.Statement;
  *
  * 
  */
-public class DatabaseCon {
+public class DatabaseSetup {
     private Statement stmt;
     private Connection conn;
     private String dbName = "";
        
     // CONSTRUCTOR
-    public DatabaseCon(){}
+    public DatabaseSetup(){}
     
     /**
      * Set up database.

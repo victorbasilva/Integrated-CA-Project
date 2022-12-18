@@ -28,6 +28,10 @@ public class ProfileMenu extends Menu {
         this.menuItems.add(changePasswordItem); // 3
     }
     
+    /**
+     * 
+     * @param user 
+     */
     public void useMenu(User user){
         boolean isBack = false;
         do{
