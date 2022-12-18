@@ -64,7 +64,7 @@ public class EquationMenu extends Menu{
         // ask user to add new linear equations for selected numberOfEquations
         for(int i=1; i <= this.numberOfEquations; i++){
             // Ask user to write equation
-            String userInput = this.myKb.getUserEquationInput("Write " + i + ". equation: ", this.numberOfEquations == 3);
+            String userInput = this.myKb.getUserEquationInput("Write equation " + i + ". Only numbers, operators signs and letters x, y and z(3x3 matrix only) allowed! ", this.numberOfEquations == 3);
             // use string helper class to get linear equation from string
             Equation linearEquation = this.equationStringHelper.getMembers(userInput);
             
