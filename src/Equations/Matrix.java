@@ -121,7 +121,7 @@ public class Matrix {
      * @param matrix 
      * Read members of matrix for debugging
      */
-    public void readMatric(double[][] matrix){
+    public void readMatrix(double[][] matrix){
         for(int i=0; i < matrix.length; i++){
             for(int j=0;j< matrix[i].length;j++){
                 System.out.println(i+j + " :" +matrix[i][j]);

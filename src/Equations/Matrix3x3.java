@@ -36,9 +36,9 @@ public class Matrix3x3 extends Matrix{
     // SOLVE 3x3 Matrix Calculations
     public boolean solve3x3Matric(){
         try{
-            this.readMatric(this.getMatrix());
+            this.readMatrix(this.getMatrix());
             // get matrics of minors
-            this.calculateMatricOfMinors();
+            this.calculateMatrixOfMinors();
             // set cofactors matrix
             this.setCoFactorsMatrix();
             // get determinant of matrics
@@ -57,72 +57,72 @@ public class Matrix3x3 extends Matrix{
     /**
      * Method to calculate
      */
-    private void calculateMatricOfMinors(){
-        double[][] _matric = this.getMatrix();
+    private void calculateMatrixOfMinors(){
+        double[][] _matrix = this.getMatrix();
         this.matrixOfMinors = new double[3][3];
         //double[][] minor = new double[3][3];
-        double[][] newMatric = new double[2][2];  
+        double[][] newMatrix = new double[2][2];  
         // FIRST ROW
         // GET minor for 0,0
-        newMatric[0][0] = _matric[1][1];
-        newMatric[0][1] = _matric[1][2];
-        newMatric[1][0] = _matric[2][1];
-        newMatric[1][1] = _matric[2][2];
-        this.matrixOfMinors[0][0] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[1][1];
+        newMatrix[0][1] = _matrix[1][2];
+        newMatrix[1][0] = _matrix[2][1];
+        newMatrix[1][1] = _matrix[2][2];
+        this.matrixOfMinors[0][0] = this.calculateDet(newMatrix);
         
         // GET minor for 0,1
-        newMatric[0][0] = _matric[1][0];
-        newMatric[0][1] = _matric[1][2];
-        newMatric[1][0] = _matric[2][0];
-        newMatric[1][1] = _matric[2][2];
-        this.matrixOfMinors[0][1] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[1][0];
+        newMatrix[0][1] = _matrix[1][2];
+        newMatrix[1][0] = _matrix[2][0];
+        newMatrix[1][1] = _matrix[2][2];
+        this.matrixOfMinors[0][1] = this.calculateDet(newMatrix);
         
         // GET minor for 0,2
-        newMatric[0][0] = _matric[1][0];
-        newMatric[0][1] = _matric[1][1];
-        newMatric[1][0] = _matric[2][0];
-        newMatric[1][1] = _matric[2][1];
-        this.matrixOfMinors[0][2] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[1][0];
+        newMatrix[0][1] = _matrix[1][1];
+        newMatrix[1][0] = _matrix[2][0];
+        newMatrix[1][1] = _matrix[2][1];
+        this.matrixOfMinors[0][2] = this.calculateDet(newMatrix);
         
         // SECOND ROW
         // GET minor for 1,0
-        newMatric[0][0] = _matric[0][1];
-        newMatric[0][1] = _matric[0][2];
-        newMatric[1][0] = _matric[2][1];
-        newMatric[1][1] = _matric[2][2];
-        this.matrixOfMinors[1][0] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[0][1];
+        newMatrix[0][1] = _matrix[0][2];
+        newMatrix[1][0] = _matrix[2][1];
+        newMatrix[1][1] = _matrix[2][2];
+        this.matrixOfMinors[1][0] = this.calculateDet(newMatrix);
         // GET minor for 1,1
-        newMatric[0][0] = _matric[0][0];
-        newMatric[0][1] = _matric[0][2];
-        newMatric[1][0] = _matric[2][0];
-        newMatric[1][1] = _matric[2][2];
-        this.matrixOfMinors[1][1] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[0][0];
+        newMatrix[0][1] = _matrix[0][2];
+        newMatrix[1][0] = _matrix[2][0];
+        newMatrix[1][1] = _matrix[2][2];
+        this.matrixOfMinors[1][1] = this.calculateDet(newMatrix);
         // GET minor for 1,2
-        newMatric[0][0] = _matric[0][0];
-        newMatric[0][1] = _matric[0][1];
-        newMatric[1][0] = _matric[2][0];
-        newMatric[1][1] = _matric[2][1];
-        this.matrixOfMinors[1][2] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[0][0];
+        newMatrix[0][1] = _matrix[0][1];
+        newMatrix[1][0] = _matrix[2][0];
+        newMatrix[1][1] = _matrix[2][1];
+        this.matrixOfMinors[1][2] = this.calculateDet(newMatrix);
         
         // THIRD ROW
         // GET minor for 2,0
-        newMatric[0][0] = _matric[0][1];
-        newMatric[0][1] = _matric[0][2];
-        newMatric[1][0] = _matric[1][1];
-        newMatric[1][1] = _matric[1][2];
-        this.matrixOfMinors[2][0] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[0][1];
+        newMatrix[0][1] = _matrix[0][2];
+        newMatrix[1][0] = _matrix[1][1];
+        newMatrix[1][1] = _matrix[1][2];
+        this.matrixOfMinors[2][0] = this.calculateDet(newMatrix);
         // GET minor for 2,1
-        newMatric[0][0] = _matric[0][0];
-        newMatric[0][1] = _matric[0][2];
-        newMatric[1][0] = _matric[1][0];
-        newMatric[1][1] = _matric[1][2];
-        this.matrixOfMinors[2][1] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[0][0];
+        newMatrix[0][1] = _matrix[0][2];
+        newMatrix[1][0] = _matrix[1][0];
+        newMatrix[1][1] = _matrix[1][2];
+        this.matrixOfMinors[2][1] = this.calculateDet(newMatrix);
         // GET minor for 2,2
-        newMatric[0][0] = _matric[0][0];
-        newMatric[0][1] = _matric[0][1];
-        newMatric[1][0] = _matric[1][0];
-        newMatric[1][1] = _matric[1][1];
-        this.matrixOfMinors[2][2] = this.calculateDet(newMatric);
+        newMatrix[0][0] = _matrix[0][0];
+        newMatrix[0][1] = _matrix[0][1];
+        newMatrix[1][0] = _matrix[1][0];
+        newMatrix[1][1] = _matrix[1][1];
+        this.matrixOfMinors[2][2] = this.calculateDet(newMatrix);
     }
     
     
@@ -135,7 +135,7 @@ public class Matrix3x3 extends Matrix{
                this.coFactorsMatrix[i][j] = this.matrixOfMinors[i][j] * this.matrixOfSigns[i][j];
             }
         }
-        this.readMatric(this.coFactorsMatrix);
+        this.readMatrix(this.coFactorsMatrix);
     }
     
     /**
@@ -144,14 +144,14 @@ public class Matrix3x3 extends Matrix{
      * their own co-factors.
      */
     private void set3x3Determinant(){
-        double[][] _matric = this.getMatrix();
+        double[][] _matrix = this.getMatrix();
        //this.setDeterminant((_matric[0][0]*this.coFactorsMatric[0][0]) + (_matric[0][1]*this.coFactorsMatric[0][1]) + (_matric[0][2]*this.coFactorsMatric[0][2])); 
        /*double temp = (_matric[0][0] * _matric[1][1] * _matric[2][2]) - (_matric[0][0] * _matric[1][2] * _matric[2][1] ) - (_matric[0][1] * _matric[1][0] * _matric[2][2]) +
        (_matric[0][1] * _matric[1][2] * _matric[2][0]) + (_matric[0][2] * _matric[1][0] * _matric[2][1]) - (_matric[0][2] * _matric[1][1] * _matric[2][2]); 
         System.out.println("TEMP:");*/
-        double temp1 = (_matric[0][0]*(_matric[1][1]*_matric[2][2])-(_matric[2][1]*_matric[1][2]));
-        double temp2 = (_matric[0][1]*(_matric[1][0]*_matric[2][2])-(_matric[2][0]*_matric[1][2]));
-        double temp3 = (_matric[0][2]*(_matric[1][0]*_matric[2][1])-(_matric[1][1]*_matric[2][0]));
+        double temp1 = (_matrix[0][0]*(_matrix[1][1]*_matrix[2][2])-(_matrix[2][1]*_matrix[1][2]));
+        double temp2 = (_matrix[0][1]*(_matrix[1][0]*_matrix[2][2])-(_matrix[2][0]*_matrix[1][2]));
+        double temp3 = (_matrix[0][2]*(_matrix[1][0]*_matrix[2][1])-(_matrix[1][1]*_matrix[2][0]));
         double temp = temp1-temp2-temp3;
         this.setDeterminant(temp);
     
@@ -165,21 +165,21 @@ public class Matrix3x3 extends Matrix{
         this.matrixInverse = new double[3][3];
                 
         // replace co factor matrix positions
-        double[][] newMatric = new double[3][3];
+        double[][] newMatrix = new double[3][3];
          for(int i=0; i<3; i++){
             for(int j=0; j<3; j++){
-                newMatric[i][j] = this.coFactorsMatrix[j][i];
+                newMatrix[i][j] = this.coFactorsMatrix[j][i];
             }
         }
         
-        this.readMatric(newMatric);
+        this.readMatrix(newMatrix);
         for(int i=0; i<3; i++){
             for(int j=0; j<3; j++){
                 // to get inverse just replace i and j on coFactor matric and then multiply with 1/det(A)
-                this.matrixInverse[i][j] = (1/this.getDeterminant()) * newMatric[i][j];
+                this.matrixInverse[i][j] = (1/this.getDeterminant()) * newMatrix[i][j];
             } 
         }
-        this.readMatric(this.matrixInverse);
+        this.readMatrix(this.matrixInverse);
     }
     
     public void solve3x3(){

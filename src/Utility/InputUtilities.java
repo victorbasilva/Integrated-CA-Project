@@ -30,7 +30,7 @@ public class InputUtilities {
             char[] charArray = userInput.toCharArray();
             // equation needs to have at least 3 members
             if(charArray.length <3){
-                System.out.println("Please enter an equation");
+                System.out.println("Please enter an equation containing at least 4 elements!");
             }
             // to find wrong input
             boolean isWrongInput = false;
@@ -74,7 +74,7 @@ public class InputUtilities {
             // if there is no equals or there is more then one equal or there was wrong input
             if((equals > 1 || equals == 0) || isWrongInput){
                 isValid = false;
-                System.out.println("Enter only digits 0-9, letters: x,y,z and +,- or = without space between them.");
+                System.out.println("Enter only digits 0-9, letters: x,y,z and +,- or = ");
             }else{
                 isValid = true; // end for loop
             }
@@ -145,7 +145,7 @@ public class InputUtilities {
                         userInput = 0;
                     }
                 } else {
-                    System.out.println("Try again. Please use number.");
+                    System.out.println("Try again. Please choose number.");
                     userInput = 0;
                 }
             } while (userInput == 0);

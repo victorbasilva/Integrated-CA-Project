@@ -52,14 +52,14 @@ public class Matrix2x2 extends Matrix{
         rearangedMatrix[0][1] = _matric[0][1] * (-1);
         rearangedMatrix[1][0] = _matric[1][0] * (-1);
         rearangedMatrix[1][1] = _matric[0][0];
-        this.readMatric(rearangedMatrix);
+        this.readMatrix(rearangedMatrix);
         this.matrixInverse = new double[2][2];
         for(int i=0; i<2; i++){
             for(int j=0; j<2; j++){
                 this.matrixInverse[i][j] = (1/this.getDeterminant()) * rearangedMatrix[i][j];
             }
         }
-        this.readMatric(this.matrixInverse);
+        this.readMatrix(this.matrixInverse);
    }
     
    /**

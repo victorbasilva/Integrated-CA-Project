@@ -2,30 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Users/User.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/LoginMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/databaseConnector/DatabaseCon.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Equations/Equation.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/databaseConnector/DataBaseReader.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/ProfileMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Utility/InputUtilities.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/MenuItem.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/linearequationscalculator/LinearEquationsCalculator.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Equations/Matric2x2.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Equations/Matric.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/databaseConnector/DataBaseWriter.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/UserOperationsMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/UsersMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Equations/EquationMember.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/OptionsMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/RegistrationMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/EquationMenu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Users/UserOperation.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Equations/Matric3x3.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Menu/Menu.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/databaseConnector/DataBaseConnection.java</file>
-            <file>file:/C:/Users/vucak/OneDrive/Documents/NetBeansProjects/%20LinearEquationsCalculator/src/Utility/StringHelper.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
