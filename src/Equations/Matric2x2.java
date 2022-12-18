@@ -5,7 +5,7 @@ package Equations;
 
 import java.util.ArrayList;
 
-public class Matric2x2 extends Matric{
+public class Matric2x2 extends Matrix{
     private double[][] matricInverse;
     private double x,y;
     // SOLVE 2x2 Matric Calculations
@@ -31,8 +31,8 @@ public class Matric2x2 extends Matric{
      * Determinant is (00 * 11) - (01 * 10)
      */
     private void calcualte2x2Determinant(){
-        double[][] _matric = this.getMatric();
-        this.setDeterminant((_matric[0][0] * _matric[1][1]) - (_matric[1][0] * _matric[0][1]));
+        double[][] _matrix = this.getMatrix();
+        this.setDeterminant((_matrix[0][0] * _matrix[1][1]) - (_matrix[1][0] * _matrix[0][1]));
     }
     
     /**
@@ -46,20 +46,20 @@ public class Matric2x2 extends Matric{
      * 1/determinant * rearranged matrix 
      */
     private void calculate2x2Inverse(){
-        double[][] _matric = this.getMatric();
+        double[][] _matrix = this.getMatrix();
         double[][] rearangedMatric = new double[2][2];
-        rearangedMatric[0][0] = _matric[1][1];
-        rearangedMatric[0][1] = _matric[0][1] * (-1);
-        rearangedMatric[1][0] = _matric[1][0] * (-1);
-        rearangedMatric[1][1] = _matric[0][0];
-        this.readMatric(rearangedMatric);
+        rearangedMatric[0][0] = _matrix[1][1];
+        rearangedMatric[0][1] = _matrix[0][1] * (-1);
+        rearangedMatric[1][0] = _matrix[1][0] * (-1);
+        rearangedMatric[1][1] = _matrix[0][0];
+        this.readMatrix(rearangedMatric);
         this.matricInverse = new double[2][2];
         for(int i=0; i<2; i++){
             for(int j=0; j<2; j++){
                 this.matricInverse[i][j] = (1/this.getDeterminant()) * rearangedMatric[i][j];
             }
         }
-        this.readMatric(this.matricInverse);
+        this.readMatrix(this.matricInverse);
    }
     
    /**
